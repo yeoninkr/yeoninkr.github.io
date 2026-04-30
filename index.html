@@ -1,92 +1,109 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>Kim Gayeon Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background: #f5f7fa;
-            color: #333;
-        }
+<meta charset="UTF-8">
+<title>Kim Gayeon Portfolio</title>
 
-        header {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #fff0f5;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 40px;
-        }
+/* 헤더 */
+header {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+}
 
-        header p {
-            font-size: 18px;
-            opacity: 0.9;
-        }
+/* 프로필 사진 */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 15px;
+}
 
-        section {
-            padding: 40px 20px;
-            max-width: 800px;
-            margin: auto;
-        }
+/* 카드 */
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
 
-        .card {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
 
-        h2 {
-            margin-top: 0;
-        }
+/* 호버 효과 */
+.card:hover {
+    transform: translateY(-5px);
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-            color: gray;
-        }
-    </style>
+/* 버튼 */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff6f91;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: gray;
+}
+</style>
 </head>
 
 <body>
 
 <header>
+    <img src="profile.jpg" class="profile-img">
     <h1>김가연</h1>
     <p>Sports Data Analyst | AI | Developer</p>
 </header>
 
 <section>
-    <div class="card">
-        <h2>👋 About Me</h2>
-        <p>한국외국어대학교에서 컴퓨터와 글로벌 스포츠를 공부하고 있습니다.  
-        스포츠 데이터 분석과 AI 활용, 창업과 극지에 관심이 있으며, 데이터를 통해 사회를 향상시키는 것을 목표로 합니다.</p>
-    </div>
 
-    <div class="card">
-        <h2>🛠 Tech Stack</h2>
-        <p>C, C++</p>
-    </div>
+<div class="card">
+    <h2>👋 About Me</h2>
+    <p>컴퓨터와 스포츠 데이터를 공부하며, 데이터를 활용하여 국가 기술 향상을 목표로 합니다.</p>
+</div>
 
-    <div class="card">
-        <h2>📊 Interests</h2>
-        <p>데이터 분석 / 스포츠 / 창업 / 극지</p>
-    </div>
+<div class="card">
+    <h2>🛠 Tech Stack</h2>
+    <p>C, C++</p>
+</div>
 
-    <div class="card">
-        <h2>📫 Contact</h2>
-        <p>Email: yeon.inkr@gmail.com</p>
-    </div>
+<div class="card">
+    <h2>📊 Portfolio</h2>
+    <p>포토폴리오를 확인할 수 있습니다.</p>
+    <a href="portfolio.pdf" class="btn">포트폴리오 보기</a>
+</div>
+
+<div class="card">
+    <h2>📫 Contact</h2>
+    <p>Email: yeon.inkr@gmail.com</p>
+</div>
+
 </section>
 
 <footer>
-    © 2026 Kim Gayeon
+© 2026 Kim Gayeon
 </footer>
 
 </body>
