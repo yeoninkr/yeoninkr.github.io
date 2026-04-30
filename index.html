@@ -13,10 +13,13 @@ body {
 
 /* 헤더 */
 header {
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    background: url('aurora.jpg');
+    background-size: cover;
+    background-position: center;
     text-align: center;
     padding: 80px 20px;
     color: white;
+    animation: auroraMove 20s infinite alternate;
 }
 
 /* 프로필 사진 */
@@ -106,5 +109,16 @@ footer {
 © 2026 Kim Gayeon
 </footer>
 
+    @keyframes auroraMove {
+    0% {
+        background-position: center top;
+    }
+    50% {
+        background-position: center center;
+    }
+    100% {
+        background-position: center bottom;
+    }
+}
 </body>
 </html>
